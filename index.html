@@ -174,35 +174,21 @@
                     <p class="text-xs font-mono text-zinc-400">Submit baseline parameters below. A technical principal will follow up within one business day to initiate a standard mutual NDA.</p>
                 </div>
                 
-                <!-- Action target configured for Formspark submission handlers -->
-                <form action="https://submit-form.com/YOUR_FORMSPARK_ID_HERE" method="POST" class="space-y-4 font-mono text-xs">
-                    
-                    <!-- Form Routing Instructions -->
-                    <input type="hidden" name="_to" value="intake@svl-labs.com">
-                    <input type="hidden" name="_cc" value="alani.kuye@gmail.com">
-                    <input type="hidden" name="_subject" value="[SVL INTAKE] New Operational Scoping Request">
-                    
-                    <div class="grid md:grid-cols-2 gap-4">
-                        <div class="space-y-2">
-                            <label class="block text-zinc-400 uppercase tracking-wider">Corporate Email Address</label>
-                            <!-- Native pattern blocker prevents standard consumer accounts (Gmail, Yahoo, etc.) from hitting submit -->
-                            <input type="email" name="email" required 
-                                   pattern="^[^@]+@(?!gmail\.com$|yahoo\.com$|hotmail\.com$|outlook\.com$|aol\.com$|icloud\.com$)[^@]+\.[^@]+$"
-                                   title="Please provide a valid corporate or institutional email domain."
-                                   class="w-full bg-[#0A0B0D] border border-zinc-800 rounded-none px-4 py-3 text-white focus:outline-none focus:border-zinc-700">
-                        </div>
-                        <div class="space-y-2">
-                            <label class="block text-zinc-400 uppercase tracking-wider">Requested Evaluation Depth</label>
-                            <select name="depth" class="w-full bg-[#0A0B0D] border border-zinc-800 rounded-none px-4 py-3 text-zinc-400 focus:outline-none focus:border-zinc-700">
-                                <option value="Pre-Launch Audit">Pre-Launch Audit (Short-Window)</option>
-                                <option value="Core Assurance Sprint" selected>Core Assurance Sprint (1 Week)</option>
-                                <option value="Enterprise Validation Cycle">Enterprise Validation Cycle (Multi-Week)</option>
-                            </select>
-                        </div>
+                <form action="https://submit-form.com/dHtyw6ZTN" class="space-y-4 font-mono text-xs">
+                    <div class="space-y-2">
+                        <label for="name" class="block text-zinc-400 uppercase tracking-wider">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Name" required
+                               class="w-full bg-[#0A0B0D] border border-zinc-800 rounded-none px-4 py-3 text-white focus:outline-none focus:border-zinc-700 placeholder-zinc-600">
                     </div>
                     <div class="space-y-2">
-                        <label class="block text-zinc-400 uppercase tracking-wider">Core System Context & Architecture Scopes</label>
-                        <textarea name="context" rows="4" required class="w-full bg-[#0A0B0D] border border-zinc-800 rounded-none px-4 py-3 text-white focus:outline-none focus:border-zinc-700" placeholder="Describe the primary multi-user workflows, data mutations, or autonomous agent behaviors requiring assurance..."></textarea>
+                        <label for="email" class="block text-zinc-400 uppercase tracking-wider">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email" required
+                               class="w-full bg-[#0A0B0D] border border-zinc-800 rounded-none px-4 py-3 text-white focus:outline-none focus:border-zinc-700 placeholder-zinc-600">
+                    </div>
+                    <div class="space-y-2">
+                        <label for="message" class="block text-zinc-400 uppercase tracking-wider">Message</label>
+                        <textarea id="message" name="message" placeholder="Message" required rows="4"
+                                  class="w-full bg-[#0A0B0D] border border-zinc-800 rounded-none px-4 py-3 text-white focus:outline-none focus:border-zinc-700 placeholder-zinc-600"></textarea>
                     </div>
                     <button type="submit" class="w-full bg-white hover:bg-zinc-200 text-black font-bold uppercase py-4 transition tracking-widest text-center block">
                         Initiate Technical Scoping
